@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+body{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+header{
+    background-color: #FFFFFF;
+    height: 80px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-size: 2.8em;
+    margin-left: 80px;
+    color: #0095FE;
+}
+ul{
+    display: flex;
+    margin-right: 80px;
+    list-style: none;
+}
+li{
+    font-size: 1.1em;
+    margin: 0px 20px; 
+    font-weight: 600;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+#contato{
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #FDE43F;
+}
+
+#contato p {
+    margin: 0px 20px;
+    color: #267480;
+    font-weight: 600;
+}
+#apresentacao{
+    position: relative;
+    height: 65vh;
+    justify-content: space-evenly;
+    background-color: #07a2ba;
+}
+#apresentacao{
+    display: flex;
+    align-items: center;
+}
+
+#text{
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    position: absolute;
+    right: 50%;
+}
+
+#text h1{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+#text p{
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+#text h3{
+    margin-top: 10px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#apresentacao img{
+    height: 68vh;
+    margin-right: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+
+
+#beneficios{
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 20vw;
+    
+}
+#beneficios h1{
+    font-size: 2.8em;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+#beneficios img{
+    height: 50px;
+    margin-left: 30px;
+}
+#lista{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lista p{
+    margin: 0px 30px 0px 10px;
+    text-align: left;
+    color: #0095FE;
+    font-weight: 700;
+}
+
+#card{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 890px) {
+    header h1{
+        color: black;
+    }
+    
+#text h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+#text p{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#text h3{
+    margin-top: 10px;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+}

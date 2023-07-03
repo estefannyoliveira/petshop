@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+ </head>
+ <body>
+    <main>
+      <h1>SeuPet</h1>
+      <h2>Login</h2>
+
+      <form method="post" autocomplete="off">
+         <div id="info">
+            <label for="use">Username</label>
+            <input type="text" name="user" id="user" placeholder="username" required title="admin">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="insira sua senha" required title="senha padrão">
+         </div>
+
+         <input type="submit" value="ENTRAR" onclick="logar()" id="entrar">
+         <p>Não tem uma conta? <a href="registrar.html">Cadastre-se</a></p>
+      </form>
+      
+    </main>
+   
+ </body>
+ <script src="login.js"></script>
+ </html>
