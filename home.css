@@ -126,7 +126,6 @@ header a{
 #lista{
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 #lista p{
@@ -138,7 +137,6 @@ header a{
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
     gap: 8px;
     margin: 0px 20px 40px;
@@ -160,12 +158,17 @@ footer a{
 }
 
 @media screen and (max-width: 890px) {
-#text{
-    color: white;
-    position: a;
-}
+
+    #contato{
+        display: none;
+    }
     
-    
+    #contato p {
+        margin: 0px 20px;
+        color: #267480;
+        font-weight: 600;
+    }
+
 #text h1{
     font-size: 2em;
     font-weight: 600;
@@ -181,14 +184,7 @@ footer a{
     font-weight: 500;
 }
 
-#apresentacao img{
-    max-height: 100%;
-    width: 90vw;
-    margin-right: 100px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-}
+
 
 nav{
     margin-right: 10px;
@@ -196,16 +192,20 @@ nav{
 .nav-list{
     display: block;
     position: absolute;
-
     width: 50%;
-    top: 90px;
-    right: 0px;
-    background-color: #fde43f91;
+    top: 80px;
+    right: 0;
+    left: auto;
+    background-color: #FDE43F;
     z-index: 1000;
-    height: 0px;
+    height: auto;
     transition: .4s;
     visibility: hidden;
     overflow-y: hidden;
+   
+}
+ul{
+    margin: 0;
 }
 #nav.active .nav-list{
     height: calc(100vh - 60px);
@@ -234,4 +234,29 @@ nav{
     background-color:#FDE43F;
 }
 
+}
+@media screen and (max-width: 700px){
+    #apresentacao img{
+        max-height: 100%;
+        width: 100vw;
+        margin-right: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #text{
+        color: white;
+        position: static;
+        margin: 0px 0px;
+        padding: 20px;
+    }
+    #apresentacao{
+        display: block;
+        align-items: center;
+        
+    } 
+    #beneficios h1{
+        font-size: 2em;
+    }
 }
