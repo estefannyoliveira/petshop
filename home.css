@@ -19,19 +19,28 @@ header{
     align-items: center;
 }
 header h1{
-    font-size: 2.8em;
-    margin-left: 80px;
+    font-size: 3em;
+    margin-left: 30px;
     color: #0095FE;
 }
-ul{
-    display: flex;
-    margin-right: 80px;
+.nav-list li{
+    display: block;
+    text-decoration: none;
     list-style: none;
+    font-weight: bold;
+    font-size: 1.3em;
+
 }
-li{
-    font-size: 1.1em;
-    margin: 0px 20px; 
-    font-weight: 600;
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+ul{
+    margin-right: 25px;
+}
+
+#btn-mobile{
+    display: none;
 }
 header a{
     text-decoration: none;
@@ -60,6 +69,7 @@ header a{
 #apresentacao{
     display: flex;
     align-items: center;
+    
 }
 
 #text{
@@ -71,22 +81,23 @@ header a{
 }
 
 #text h1{
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 600;
 }
 #text p{
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: 300;
 }
 
 #text h3{
     margin-top: 10px;
-    font-size: 1.8em;
+    font-size: 2.5em;
     font-weight: 500;
 }
 
 #apresentacao img{
-    height: 68vh;
+    max-height: 66vh;
+    max-width: 50%;
     margin-right: 100px;
     position: absolute;
     left: 50%;
@@ -98,18 +109,19 @@ header a{
 #beneficios{
     background-color: #FFFFFF;
     text-align: center;
-    height: 20vw;
     
 }
 #beneficios h1{
     font-size: 2.8em;
     padding: 15px;
     text-transform: uppercase;
+    color: #07a2ba;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #beneficios img{
     height: 50px;
-    margin-left: 30px;
 }
 #lista{
     text-align: center;
@@ -118,8 +130,6 @@ header a{
     justify-content: center;
 }
 #lista p{
-    margin: 0px 30px 0px 10px;
-    text-align: left;
     color: #0095FE;
     font-weight: 700;
 }
@@ -129,12 +139,32 @@ header a{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px 20px 40px;
+}
+
+footer{
+    height: 30px;
+    background-color: #FDE43F;
+    text-align: center;
+    color: #0095FE;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    color: #267480;
 }
 
 @media screen and (max-width: 890px) {
-    header h1{
-        color: black;
-    }
+#text{
+    color: white;
+    position: a;
+}
+    
     
 #text h1{
     font-size: 2em;
@@ -149,6 +179,59 @@ header a{
     margin-top: 10px;
     font-size: 1.4em;
     font-weight: 500;
+}
+
+#apresentacao img{
+    max-height: 100%;
+    width: 90vw;
+    margin-right: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+nav{
+    margin-right: 10px;
+}
+.nav-list{
+    display: block;
+    position: absolute;
+
+    width: 50%;
+    top: 90px;
+    right: 0px;
+    background-color: #fde43f91;
+    z-index: 1000;
+    height: 0px;
+    transition: .4s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+#nav.active .nav-list{
+    height: calc(100vh - 60px);
+    visibility: visible;
+    /*overflow-y: auto;*/
+}
+
+.nav-list li{
+    padding: 10px 0px;
+    margin-right: 40px;
+    border-bottom: 2px solid #267480;
+}
+#btn-mobile{
+    display: flex;
+    padding: .5rem 10px ;
+    border: none;
+    color: #E7E4E4;
+    background-color: #0095FE;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#btn-mobile:hover{
+    font-weight: bold;
+    color:#0095FE;
+    background-color:#FDE43F;
 }
 
 }

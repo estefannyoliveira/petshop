@@ -14,13 +14,16 @@
 
 <body>
     <header>
-        <h1>SeuPet</h1>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PRODUTOS</a></li>
-            <li><a href="#">SERVIÇOS</a></li>
-            <li><a href="reg.html">SUA CONTA</a></li>
-        </ul>
+      <h1>SeuPet</h1>
+            <nav id="nav">
+                <button id="btn-mobile">Menu</button>  
+                <ul class="nav-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PRODUTOS</a></li>
+                    <li><a href="#">SERVIÇOS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
     </header>
     <div id="contato">
         <p>WhatsApp: (92) 9002-8902</p>
@@ -30,10 +33,14 @@
     <main>
         <div id="apresentacao">
             <div id="text">
-                <h1>O melhor para Seu Pet.</h1>
-                <p>Aqui você encontra qualidade <br>e transparência</p>
-                <h3>Conheça nossa história:</h3>
-                <p>Quem somos</p>
+                <div id="1par">
+                    <h1>O melhor para Seu Pet.</h1>
+                    <p>Aqui você encontra qualidade <br>e transparência</p>
+                </div>
+                <div id="2par">
+                    <h3>Conheça nossa história:</h3>
+                    <p>Quem somos</p>
+                </div>
             </div>
             <img src="img/portrait-of-a-dog-png.webp" alt="">
         </div>
@@ -55,6 +62,9 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p>Site desenvolvido por <a href="">EstefannyOliveira</a></p>
+    </footer>
+    <script src="menu.js"></script>
 </body>
-
 </html>
