@@ -5,8 +5,7 @@ function logar(){
     if(user.length === 0 || senha.length === 0){
         alert("Preencha os dados de login!")
     }else if (user === "admin" && senha === "admin"){
-        window.location.href = "index.html";
-    }else{
+        window.location.href = 'index.html'
         alert("Login ou senha incorretos! confira os dados.")
     }
 }

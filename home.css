@@ -68,7 +68,7 @@ header a{
     position: relative;
     height: 65vh;
     justify-content: space-evenly;
-    background-color: #07a2ba;
+    background-color: #0095FE;
 }
 #apresentacao{
     display: flex;
@@ -119,7 +119,7 @@ header a{
     font-size: 2.8em;
     padding: 15px;
     text-transform: uppercase;
-    color: #07a2ba;
+    color: #0095FE;
     margin-bottom: 20px;
     margin-top: 20px;
 }
