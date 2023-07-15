@@ -247,6 +247,7 @@ ul{
         padding: 20px;
     }
     #apresentacao{
+        height: 58vh;
         display: block;
         align-items: center;
         
